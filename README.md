@@ -1,19 +1,20 @@
 # _Numbers to Words_
-## _By: Celeste Field, Mark Gridley, Dan Merys_
+## _By: Celeste Field, Chisato Murakami, Allison Mackey_
 ## Description
 
-_This application will take a script and let the user enter an amount of cents that shows the smallest number of quarters, dimes, nickels, and pennies needed to make that change._
+_This application will create a basic CRUD application to update and delete Parcels._
 
 ## Setup
 
 
-* _Clone repository from Github: https://github.com/fieldceleste/coin_combo.git_
+* _Clone repository from Github: https://github.com/fieldceleste/anagrams_antigrams_project.git_
 * _Open the repository folder in the terminal_
-* _Make sure you intitialize GIT, and delete the exsiting .git file by running in the terminal $rm -rf .git. 
-* _Now that you have everything ready, you can run git init. 
-* _Open in editor (i.e. Visual Studio Code) and create your own repo._
-* _Enter $ npm run start to run your local server and display your page._
-* _As well, you can create a gh-pages to diplay your site or use the live server extension on Visual Code Studio.
+* _Install all dependencies_
+* _Make sure to check which Ruby version you are running by typing `ruby -v`_
+* _Cd the project into the root directory and run `bundle install` in the terminal._
+* _Open your text editor of choice._
+* _Run any test with `rspec`_
+* _Run any script files by running `ruby anagram_.script.rb`_
 
 ## Known Bugs
 _No known bugs at this time_
@@ -25,19 +26,23 @@ _No known bugs at this time_
 * _Ruby_
 * _Rspec_
 * _Pry_
+* _Sinatra_
+
 
 ## Specs
 
 |Behavior|Input|Output|
 | :-----|:-----|:-----|
-| User enters a number | 10 | |
-| App will divide number by 1| 25 | 25 |
-| App will divide number by 5 | 25 | 5 | 
-| App will divide number by 10 | 25 | 2 | 
-| App will divide number by 25 | 25 | 1 | 
-| App will divide number by 50 | 25 | 0 |
-|  |  |  |
-
+| User will enter in a number for width| 2 | [] |
+| User will enter in a number for height| 10 | [] |
+| User will enter in a number for length| 3 |  [] |
+| User will enter in a number for weight | 5 | [] |
+| User will update list w/ a new parcel | [] |
+| User will be able to delete a instance of parcel | [] |
+| User will be able to view all parcels in a list | [] |
+| User will be able to search for a parcel | [] |
+| User will be able to calculate the volume of the parcel | [] |
+| User will be able to find how much it costs to ship a parcel based on speed, distance, dims & weight | [] | 
 
 
 
@@ -45,7 +50,7 @@ _No known bugs at this time_
 
 #### MIT License
 
-### Copyright (c) 2020 Celeste Field, Mark Gridley, Dan Merys
+### Copyright (c) 2020 Celeste Field, Chisato Murakami, Allison Mackey
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
