@@ -47,5 +47,13 @@ describe "#Parcel" do
       expect(Parcel.find(parcel1.id)).to(eq(parcel1))
     end
   end
-  
+  describe("#update") do 
+    it("updates an album by id") do 
+      parcel = Parcel.new("parcel1", "12", "12", "12", "15", nil)
+      parcel.save()
+      parcel.update("parcel1", "20", "15", "15", "12")
+      expect(parcel.name).to(eq("parcel1", "20", "15", "15", "12"))
+    end
+  end
+
 end
