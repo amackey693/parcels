@@ -11,10 +11,11 @@ describe "#Parcel" do
 
   describe('#save') do
     it("saves a parcel") do
-    parcel1 = Parcel.new("parcel1", "12", "12", "12", "15", nil)
-    parcel1.save()
-   
-    expect(Parcel.all).to(eq([parcel1]))
+    parcel = Parcel.new("parcel", "12", "12", "12", "15", nil)
+    parcel.save()
+    parcel2 = Parcel.new("parcel2", "12", "12", "12", "15", nil)
+    parcel2.save()
+    expect(Parcel.all).to(eq([parcel, parcel2]))
     end
   end
 
@@ -61,8 +62,10 @@ describe "#Parcel" do
     it("deletes parcel by id") do
       parcel = Parcel.new("parcel", "12", "12", "12", "15", nil)
       parcel.save()
+      parcel2 = Parcel.new("parce2", "12", "12", "12", "15", nil)
+      parcel2.save()
       parcel.delete()
-      expect(Parcel.all).to(eq([]))
+      expect(Parcel.all).to(eq([parcel2]))
     end
   end
 

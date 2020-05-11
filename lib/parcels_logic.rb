@@ -11,7 +11,7 @@ class Parcel
     @length = length.to_i
     @height = height.to_i
     @weight = weight.to_i
-    @@id = id || @@total_rows += 1
+    @id = id || @@total_rows += 1
   end
   
   def self.all 
@@ -24,8 +24,12 @@ class Parcel
 
   def ==(parcel_to_compare)
     self.name() == parcel_to_compare.name()
+    self.height() == parcel_to_compare.height()
+    self.width() == parcel_to_compare.width()
+    self.length() == parcel_to_compare.length()
+    self.weight() == parcel_to_compare.weight() 
   end
-  
+
   def self.clear
     @@parcels = {}
     @@total_rows = 0
