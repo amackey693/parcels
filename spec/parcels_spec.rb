@@ -51,8 +51,8 @@ describe "#Parcel" do
     it("updates an album by id") do 
       parcel = Parcel.new("parcel1", "12", "12", "12", "15", nil)
       parcel.save()
-      parcel.update("parcel1", "20", "15", "15", "12")
-      expect(parcel.name).to(eq("parcel1", "20", "15", "15", "12"))
+      parcel.update("parcel1","12", "12", "12", "20")
+      expect(parcel.weight).to(eq(20))
     end
   end
 
