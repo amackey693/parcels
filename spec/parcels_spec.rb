@@ -48,11 +48,22 @@ describe "#Parcel" do
     end
   end
   describe("#update") do 
-    it("updates an album by id") do 
+    it("updates an parcel by id") do 
       parcel = Parcel.new("parcel1", "12", "12", "12", "15", nil)
       parcel.save()
       parcel.update("parcel1","12", "12", "12", "20")
       expect(parcel.weight).to(eq(20))
+    end
+  end
+
+  describe('#delete') do 
+    it("deletes parcel by id") do
+      parcel = Parcel.new("parcel", "12", "12", "12", "15", nil)
+      parcel.save()
+      parcel1 = Parcel.new("parcel1", "15", "15", "15", "15", nil)
+      parcel1.save()
+      parcel.delete()
+      expect(Parcel.all).to(eq([parcel1]))
     end
   end
 

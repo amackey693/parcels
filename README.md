@@ -40,8 +40,8 @@ _No known bugs at this time_
 | User will enter in a number for weight | 5 | [√] |
 | User will update list w/ a new parcel | [√] |
 | User will be able to clear the list | [√] |
-| Make a Find id | [] |
-| Allows user to update package information | [] |
+| Make a Find id | [√] |
+| Allows user to update package information | [√] |
 | User will be able to delete a instance of parcel | [] |
 | User will be able to search for a parcel | [] |
 | User will be able to view all parcels in a list | [] |

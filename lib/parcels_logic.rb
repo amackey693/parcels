@@ -34,6 +34,7 @@ class Parcel
   def self.find(id)
     @@parcels[id]
   end
+  
   def update(name, width, height, length, weight)
     self.name = name
     self.width = width.to_i
