@@ -26,10 +26,9 @@ class Parcel
     self.name() == parcel_to_compare.name()
   end
   
-  def self.clear
-    @@parcels = {}
-    @@total_rows = 0
-  end
-
+  # def self.clear
+  #   @@parcels = {}
+  #   @@total_rows = 0
+  # end
 end 
 

@@ -5,10 +5,10 @@ require 'pry'
 
 
 describe "#Parcel" do
-  before(:each) do
-    Parcel.clear()
-  end
-  
+  # before(:each) do
+  #   Parcel.clear()
+  # end
+
   describe('#save') do
     it("saves a parcel") do
     parcel1 = Parcel.new("parcel1", "12", "12", "12", "15", nil)
@@ -24,8 +24,9 @@ describe "#Parcel" do
       expect(parcel1).to(eq(parcel2))
     end
   end
+  describe('.all') do 
+    it("returns an empty array when there are no parcels") do 
+      expect(Parcel.all).to(eq([]))
+   end
+  end
 end
-  #  describe('.all') do 
-  #   expect(Parcel.all).to(eq([]))
-  #  end
-  # end
