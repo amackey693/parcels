@@ -1,17 +1,16 @@
 class Parcel
-  attr_accessor :name
-  # , :width, :length, :height, :weight
+  attr_accessor :name, :width, :length, :height, :weight
   attr_reader :name, :id
   
   @@parcels = {}
   @@total_rows = 0
   
-  def initialize(name, id)
+  def initialize(name, width, length, height, weidght, id)
     @name = name
-    # @width = width.to_i
-    # @length = length.to_i
-    # @height = height.to_i
-    # @weight = weight.to_i
+    @width = width.to_i
+    @length = length.to_i
+    @height = height.to_i
+    @weight = weight.to_i
     @@id = id || @@total_rows += 1
   end
   
@@ -20,14 +19,17 @@ class Parcel
   end 
 
   def save
-    @@parcels[self.id] = Parcel.new(self.name, self.id)
+    @@parcels[self.id] = Parcel.new(self.name, self.width, self.length, self.height, self.weight, self.id)
   end
 
   def ==(parcel_to_compare)
     self.name() == parcel_to_compare.name()
   end
-
-
+  
+  def self.clear
+    @@parcels = {}
+    @@total_rows = 0
+  end
 
 end 
 

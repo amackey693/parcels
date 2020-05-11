@@ -33,6 +33,7 @@ _No known bugs at this time_
 
 |Behavior|Input|Output|
 | :-----|:-----|:-----|
+| Useer can enter in a parcel name & save it | "p1" | [√]
 | User will enter in a number for width| 2 | [] |
 | User will enter in a number for height| 10 | [] |
 | User will enter in a number for length| 3 |  [] |
