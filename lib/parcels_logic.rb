@@ -30,5 +30,9 @@ class Parcel
     @@parcels = {}
     @@total_rows = 0
   end
+
+  def self.find(id)
+    @@parcels[id]
+  end
 end 
 

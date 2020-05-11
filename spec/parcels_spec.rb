@@ -20,7 +20,16 @@ describe "#Parcel" do
   describe('.all') do 
     it("returns an empty array when there are no parcels") do 
       expect(Parcel.all).to(eq([]))
-   end
+    end
+  end
+  
+  describe('.clear') do
+   it("clears all parcels") do
+      parcel = Parcel.new("parcel1","12", "12", "12", "15", nil)
+      parcel.save()
+      Parcel.clear()
+      expect(Parcel.all).to(eq([]))
+   end 
   end
 
   describe('#==') do
@@ -28,6 +37,14 @@ describe "#Parcel" do
       parcel1 = Parcel.new("parcel1", "12", "12", "12", "15", nil)
       parcel2 = Parcel.new("parcel1", "12", "12", "12", "15", nil)
       expect(parcel1).to(eq(parcel2))
+    end
+  end
+
+  describe('.find') do
+    it("finds a parcel by id")do
+      parcel1 = Parcel.new("parcel1", "12", "12", "12", "15", nil)
+      parcel1.save()
+      expect(Parcel.find(parcel1.id)).to(eq(parcel1))
     end
   end
   

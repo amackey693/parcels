@@ -34,14 +34,17 @@ _No known bugs at this time_
 |Behavior|Input|Output|
 | :-----|:-----|:-----|
 | Useer can enter in a parcel name & save it | "p1" | [√]
-| User will enter in a number for width| 2 | [] |
-| User will enter in a number for height| 10 | [] |
-| User will enter in a number for length| 3 |  [] |
-| User will enter in a number for weight | 5 | [] |
-| User will update list w/ a new parcel | [] |
+| User will enter in a number for width| 2 | [√] |
+| User will enter in a number for height| 10 | [√] |
+| User will enter in a number for length| 3 |  [√] |
+| User will enter in a number for weight | 5 | [√] |
+| User will update list w/ a new parcel | [√] |
+| User will be able to clear the list | [√] |
+| Make a Find id | [] |
+| Allows user to update package information | [] |
 | User will be able to delete a instance of parcel | [] |
-| User will be able to view all parcels in a list | [] |
 | User will be able to search for a parcel | [] |
+| User will be able to view all parcels in a list | [] |
 | User will be able to calculate the volume of the parcel | [] |
 | User will be able to find how much it costs to ship a parcel based on speed, distance, dims & weight | [] | 
 
